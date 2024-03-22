@@ -1,0 +1,21 @@
+<resources>
+    <string name="tienda_online">Tienda Online</string>
+    <string name="Cafe_0.85">Cafe $0.85</string>
+    <string name="Chocolate_con_Leche">Chocolate con leche $0.50</string>
+    <string name="bebidas">Bebidas </string>
+    <string name="Licuado_de_fruta">Licuado de Fruta $2.25</string>
+    <string name="Desayno_Tipico">Desayuno tipico $3.50</string>
+    <string name="Tortitas_de_Carne">Tortitas de carne $0.70</string>
+    <string name="Enchiladas">Enchiladas $0.45</string>
+    <string name="Pupusas_al_Gusto">Pupusas al Gusto $0.75</string>
+    <string name="Desayunos">Desayunos</string>
+    <string name="Total_a_pagar">total a pagar</string>
+    <string name="Entrega_a_Domicilio">Entrega a Domicilio $10</string>
+    <string name="Para_llevar">Para llevar</string>
+    <string name="Seleccione_los_datos_de_pedido">Selecciones los datos de pedido</string>
+    <string name="Restaurant_Rincon_Gastronomico">RestaurantRincon Gastronomico</string>
+    <string name="Calcular">Calcular</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="Jugo_de_Naranja">Jugo de Naranja</string>
+    <string name="Todo">Todo</string>
+</resources>

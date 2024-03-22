@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ScrollViewSize">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="Restaurant &quot;Rincón Gastronómico&quot;"
+        android:textColor="#673AB7"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,SpUsage,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitulo"
+        android:text="Seleccione los datos de pedido:"
+        android:textSize="16dp"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,SpUsage,TextSizeCheck" />
+
+    <RadioGroup
+        android:id="@+id/RadioG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbllevar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Para llevar"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+        <RadioButton
+            android:id="@+id/rbdomicilio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Entrega a domicilio"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DESAYUNOS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FF5722"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            app:srcCompat="@drawable/desayunos"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxPupusas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pupusas al gusto $0.75"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/checkBoxEnchiladas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enchiladas $0.45"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxTortilla"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tortitas de Carne $0.70"
+                tools:ignore="HardcodedText,TextSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDesTipico"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Desayuno Típico $3.50"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtBebidas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BEBIDAS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#FF5722"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:srcCompat="@drawable/bebidas"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxChocolate"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Chocolate con Leche $0.50"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxCafe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Café $0.85"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxLicuado"
+                    android:layout_width="185dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Licuado de Fruta $2.25"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxJugo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Jugo de Naranja $1.75"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:orientation="vertical"
+            tools:ignore="TextSizeCheck">
+
+            <TextView
+                android:id="@+id/texttotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total a pagar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btncalcular"
+                android:layout_width="104dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:onClick="setBcalcular"
+                android:text="Calcular"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btncancelar"
+                android:layout_width="119dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Cancelar"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_weight="1"
+            android:entries="@array/doc"
+            tools:ignore="InefficientWeight" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
